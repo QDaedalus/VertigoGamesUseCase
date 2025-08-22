@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "8d393e7e-a768-4161-b693-19fbb12a1017",
+		"name": "VertigoGames",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23960025",
+		"_collection_link": "https://lively-spaceship-678540.postman.co/workspace/Team-Workspace~52ee747d-a4ad-4b0b-8453-d899a24e5914/collection/23960025-8d393e7e-a768-4161-b693-19fbb12a1017?action=share&source=collection_link&creator=23960025"
+	},
+	"item": [
+		{
+			"name": "Local Test Select",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"TurkishHonorTeam\",\"region\":\"TR\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:4000/clans/4f9680a8-18b5-4ee5-9b41-b1ea7d37bbef",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "4000",
+					"path": [
+						"clans",
+						"4f9680a8-18b5-4ee5-9b41-b1ea7d37bbef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GCP Create Clan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"TurkishHonorTeam\",\"region\":\"TR\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vertigoimg-108401742225.europe-west1.run.app/clans",
+					"protocol": "https",
+					"host": [
+						"vertigoimg-108401742225",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"clans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Clan Names",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://vertigoimg-108401742225.europe-west1.run.app/clans",
+					"protocol": "https",
+					"host": [
+						"vertigoimg-108401742225",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"clans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Specific Clan Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://vertigoimg-108401742225.europe-west1.run.app/clans/7c0dafad-4b7a-4efe-81e7-83dcda9e1d4e",
+					"protocol": "https",
+					"host": [
+						"vertigoimg-108401742225",
+						"europe-west1",
+						"run",
+						"app"
+					],
+					"path": [
+						"clans",
+						"7c0dafad-4b7a-4efe-81e7-83dcda9e1d4e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
