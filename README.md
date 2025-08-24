@@ -19,3 +19,6 @@
 - The database is live in Google Cloud.
 - The REST API is handled with the Python Flask framework and runs on google cloud run system.
 - API calls are saved as a Postman collection file, which can easily be tested.
+
+## Public API Link
+- https://vertigoimg-108401742225.europe-west1.run.app
